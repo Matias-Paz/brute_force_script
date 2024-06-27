@@ -1,5 +1,36 @@
+####################### Script de Fuerza Bruta para WiFi ########################################################################
+"""
+Autor: Matías Paz
+Fecha de Creación: Junio 2024
 
+Descripción:
+Este script está diseñado para realizar un ataque de fuerza bruta contra redes WiFi, intentando obtener acceso utilizando una lista de contraseñas comunes y generando combinaciones de caracteres alfanuméricos. Permite ajustar el rango de longitud de contraseñas a probar según las necesidades del usuario. Es importante ejecutar este script de manera responsable y solo en entornos autorizados.
 
+Requisitos:
+- Python 3
+- Sistema operativo compatible con los comandos netsh de Windows (para configuración de red)
+
+Uso:
+Ejecuta el script desde la línea de comandos proporcionando el nombre exacto de la red WiFi como argumento.
+
+Ejemplo:
+python main.py "<nombre_red>"
+
+Funcionamiento:
+El script realiza las siguientes operaciones:
+1. Obtiene la dirección MAC y la dirección IP originales de la máquina.
+2. Realiza un ataque de fuerza bruta utilizando contraseñas comunes almacenadas en un archivo.
+3. Genera combinaciones de caracteres alfanuméricos para intentar descifrar la contraseña de la red WiFi.
+
+Seguridad:
+Este script debe utilizarse únicamente con fines educativos o en entornos controlados donde se tenga permiso explícito para realizar pruebas de penetración. El acceso no autorizado a redes WiFi es ilegal y puede tener consecuencias legales.
+
+Advertencia:
+No utilices este script para acceder a redes WiFi sin autorización explícita. El mal uso de este script es responsabilidad del usuario.
+
+Importaciones necesarias:
+
+"""
 import uuid
 import socket
 import os
@@ -11,6 +42,8 @@ from datetime import timedelta
 from timeit import default_timer as timer
 import ctypes
 import subprocess
+
+##############################################################################################################################################
 
 # Obtén la dirección MAC original
 def get_original_mac():
