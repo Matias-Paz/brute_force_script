@@ -16,8 +16,8 @@ Este script en Python realiza un ataque de fuerza bruta para obtener acceso a un
 1. **Clonar el repositorio:**
 
    ```bash
-   git clone https://github.com/tu_usuario/repo.git
-   cd repo
+   git clone https://github.com/Matias-Paz/brute_force_script.git
+   cd brute_force_script
    ```
 
 #### El script utiliza bibliotecas estándar de Python. No se requiere ninguna instalación adicional.
