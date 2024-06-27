@@ -29,7 +29,6 @@ Advertencia:
 No utilices este script para acceder a redes WiFi sin autorización explícita. El mal uso de este script es responsabilidad del usuario.
 
 Importaciones necesarias:
-
 """
 import uuid
 import socket
